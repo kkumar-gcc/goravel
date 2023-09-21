@@ -19,7 +19,9 @@ import (
 	"github.com/goravel/framework/route"
 	"github.com/goravel/framework/schedule"
 	"github.com/goravel/framework/support/carbon"
+	"github.com/goravel/framework/testing"
 	"github.com/goravel/framework/validation"
+	"github.com/goravel/gin"
 
 	"goravel/app/providers"
 )
@@ -82,6 +84,7 @@ func init() {
 			&crypt.ServiceProvider{},
 			&filesystem.ServiceProvider{},
 			&validation.ServiceProvider{},
+			&testing.ServiceProvider{},
 			&providers.AppServiceProvider{},
 			&providers.AuthServiceProvider{},
 			&providers.RouteServiceProvider{},
@@ -91,6 +94,7 @@ func init() {
 			&providers.EventServiceProvider{},
 			&providers.ValidationServiceProvider{},
 			&providers.DatabaseServiceProvider{},
+			&gin.ServiceProvider{},
 		},
 	})
 }
