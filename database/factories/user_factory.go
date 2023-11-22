@@ -5,7 +5,7 @@ import "github.com/brianvoe/gofakeit/v6"
 type UserFactory struct {
 }
 
-// Definition Define the model's default state.
+// Definition Defines the model's default state.
 func (f *UserFactory) Definition() any {
 	faker := gofakeit.New(0)
 	return map[string]interface{}{

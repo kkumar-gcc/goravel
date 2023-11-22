@@ -3,6 +3,7 @@ module goravel
 go 1.20
 
 require (
+	github.com/brianvoe/gofakeit/v6 v6.23.2
 	github.com/goravel/framework v1.13.1
 	github.com/goravel/gin v1.1.4
 	github.com/stretchr/testify v1.8.4
